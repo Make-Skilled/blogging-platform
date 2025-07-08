@@ -54,6 +54,15 @@ def init_categories():
         categories_collection.insert_many(categories)
 
 # Routes
+@app.route('/health')
+def health_check():
+    """Health check endpoint for deployment verification"""
+    return {
+        'status': 'healthy',
+        'message': 'BlogHub is running successfully!',
+        'database': 'connected' if client.admin.command('ping') else 'disconnected'
+    }
+
 @app.route('/')
 def home():
     # Get published blogs

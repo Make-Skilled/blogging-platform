@@ -166,7 +166,23 @@ You can modify these in the `init_categories()` function in `app.py`.
 python app.py
 ```
 
-### Production Deployment
+### Vercel Deployment (Recommended)
+
+For easy deployment to Vercel, follow these steps:
+
+1. **Push your code to GitHub**
+2. **Set up MongoDB Atlas** (cloud database)
+3. **Deploy to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Add environment variables:
+     - `SECRET_KEY`: Your Flask secret key
+     - `MONGODB_URI`: Your MongoDB Atlas connection string
+   - Deploy!
+
+📖 **Detailed deployment guide**: See [DEPLOYMENT.md](DEPLOYMENT.md) for complete step-by-step instructions.
+
+### Traditional Production Deployment
 1. Set `DEBUG = False` in `config.py`
 2. Use a production WSGI server like Gunicorn
 3. Set up a production MongoDB instance
