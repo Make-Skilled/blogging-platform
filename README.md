@@ -266,4 +266,5 @@ If you encounter any issues or have questions:
 5. **Access admin panel**: Use admin login at `/admin-login` or click "Admin Login" on home page
 6. **Approve blogs**: Use admin panel at `/admin`
 
-Enjoy blogging with BlogHub! 🚀 
+Enjoy blogging with BlogHub! 🚀 #   m u l t i b l o g g i n g - p l a t f o r m  
+ 
